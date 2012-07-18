@@ -1,0 +1,10 @@
+batwrap
+-------
+
+A binary that forwards to an existing .bat file. This allows calling a program
+named 'wee' and just having it in the path, but using 'wee' in the
+lpApplicationName position for CreateProcess. Otherwise, it needs to be
+prefixed with "cmd /c" or similar.
+
+To use, just build, and then rename batwrap.exe to whatever.exe. Then, running
+whatever.exe will run whatever.bat under cmd.
